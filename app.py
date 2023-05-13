@@ -1,15 +1,16 @@
-def is_palindrome(string):
-    # convert to lowercase and remove non-alphabetic characters
-    string = "".join(c.lower() for c in string if c.isalpha())
-    # compare to its reverse
-    reversed_string = "".join(reversed(string))
-    return string == reversed_string
-
-# get user input for the string
-user_input = input("Enter a string: ")
-
-# check if the string is a palindrome
-if is_palindrome(user_input):
-    print(f"{user_input} is a palindrome.")
+a = input("Enter a string: ")
+b = input("Enter b string: ")
+c = input("Enter c string: ")
+#Checking whether above words are palindrome or not
+if(a == a[::-1]):
+    print(f"{a} is palindrome")
 else:
-    print(f"{user_input} is not a palindrome.")
+    print(f"{a} is not palindrome")
+if(b == b[::-1]):
+    print(f"{b} is palindrome")
+else:
+    print(f"{b} is not palindrome")
+if(c == c[::-1]):
+    print(f"{c} is palindrome")
+else:
+    print(f"{c} is not palindrome")
